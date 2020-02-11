@@ -1,0 +1,54 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<html>
+  <head>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  </head>
+<body id="LoginForm">
+<div class="container">
+<div class="login-form">
+<div class="main-div">
+    <div class="panel">
+   <p>Please enter your email and password</p>
+   </div>
+    <form id="Login">
+
+        <div class="form-group">
+
+
+            <input [(ngModel)]="username" name="username" placeholder="Email Address">
+
+        </div>
+
+        <div class="form-group">
+
+            <input [(ngModel)]="password" type="password" name="password" placeholder="Password">
+
+        </div>
+        <div>
+            <select [(ngModel)]="type" name="type">
+                <option selected disabled >Choose type:</option>
+                <option value = "ADMIN">Admin</option>
+                <option value = "COMPANY">Company</option>
+                <option value = "CUSTOMER">Customer</option>             
+            </select>
+        </div>
+        <br>
+
+        <button type="submit" (click)="login()" class="btn btn-primary">Login</button>
+
+    </form>
+    </div>
+</div></div>
+
+
+</body>
+</html>

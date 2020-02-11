@@ -1,0 +1,19 @@
+<img *ngIf="!companys" src="https://media.giphy.com/media/l4q7Yw5UC0d44yLOU/giphy.gif">
+
+<div *ngIf="companys">
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>email</th>
+            <th>password</th>
+        </tr>
+        <tr *ngFor="let p of companys">
+            <td>{{p.id}}</td>
+            <a routerLink = "/single-product/{{p.id}}" routerLinkActive=""></a>
+            <td>{{p.name}}</td>
+            <td>{{p.email}}</td>
+            <td>{{p.password}}</td>
+        </tr>
+    </table>
+</div>

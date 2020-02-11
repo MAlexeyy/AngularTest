@@ -1,0 +1,19 @@
+
+
+<div>
+    <p>admin works!</p>
+
+
+
+
+    <div *ngIf="flag; else elseBlock"><app-company-service></app-company-service></div>
+    <ng-template #elseBlock><app-customer-service></app-customer-service></ng-template>
+</div>
+
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>

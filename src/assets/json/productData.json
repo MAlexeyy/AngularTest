@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Licensed Frozen Hat",
+        "price": 3434,
+        "amount": 56840
+    },
+    {
+        "id": 2,
+        "name": "Cookies",
+        "price": 4343,
+        "amount": 23232
+    },
+    {
+        "id": 2,
+        "name": "Milk",
+        "price": 43434,
+        "amount": 3434
+    }
+]

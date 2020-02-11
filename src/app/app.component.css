@@ -1,0 +1,30 @@
+html {
+    /* To make use of full height of page*/
+    min-height: 100vh;
+    margin: 0;
+}
+
+section {
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+  }
+
+header{
+    grid-column: span 12;
+    border: 2px solid black;
+  }
+
+  main{
+    grid-column: span 12;
+    border: 2px solid black;
+  }
+  
+  footer{
+    grid-column: span 12;
+    border: 2px solid black;
+  }
